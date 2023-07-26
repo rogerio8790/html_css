@@ -1,0 +1,31 @@
+* {
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: rgb(238, 232, 232);
+	border: none;
+}
+
+.study {
+	padding: 25px;
+}
+
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+	padding-top: 20px;
+	padding-left: 45px;
+}
+
+.study ol {
+	padding-left: 45px;
+	padding-top: 5px;
+}
+
+li {
+	color: black
+}
+
