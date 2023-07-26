@@ -1,0 +1,12 @@
+* {
+	margin: 0;
+	height: 100%;
+	background-image: linear-gradient(to bottom, #6a0f49 30%, #4a001f, #a7c4c2);
+}
+
+h1 {
+	color: #ffffff;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	text-align: center;
+	padding-top: 20px;
+}
