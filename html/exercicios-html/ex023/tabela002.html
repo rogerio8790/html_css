@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(136, 134, 134);
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+        thead, tfoot {
+            background-color: rgb(71, 71, 71);
+            color: white;
+            height: 50px;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(71, 71, 71);
+        }
+
+        tbody > tr:nth-child(odd) { /* odd - para impar*/
+            background-color: rgb(175, 175, 174);
+        }
+
+        tbody > tr:nth-child(even) { /* odd - para par*/
+            background-color: white;
+        }
+
+        /* Podendo usar o 2n
+        tbody > tr:nth-child(2n) {
+            background-color: white;
+        }*/
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas Grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 100px;">População</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44 420 459</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 538 718</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 054 524</td>
+            </tr>
+
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 136 417</td>
+            </tr>
+
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 443 208</td>
+            </tr>
+
+            <tr>
+                <td>Rio GRande do Sul</td>
+                <td class="num">10 880 506</td>
+            </tr>
+
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 058 155</td>
+            </tr>
+
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8 791 688</td>
+            </tr>
+
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 116 132</td>
+            </tr>
+
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 609 601</td>
+            </tr>
+
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7 055 228</td>
+            </tr>
+
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6 775 152</td>
+            </tr>
+
+            <td>Paraiba</td>
+            <td class="num">3 974 495</td>
+        </tr>
+
+        <tr>
+            <td>Amazonas</td>
+            <td class="num">3 941 175</td>
+        </tr>
+
+        <tr>
+            <td>Espiríto Santo</td>
+            <td class="num">3 833 486</td>
+        </tr>
+
+        <tr>
+            <td>Mato Grosso</td>
+            <td class="num">3 658 813</td>
+        </tr>
+
+        <tr>
+            <td>Rio Grande do Norte</td>
+            <td class="num">3 302 406</td>
+        </tr>
+        </tbody>
+
+        <tfoot>
+            <th scope="row">Total de Hbitantes</th>
+            <td class="num"><strong>166 742 485</strong></td>
+        </tfoot>
+    </table>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab debitis mollitia delectus rem, quas sequi ducimus doloremque eveniet, autem explicabo ex quis? Molestiae doloremque quisquam recusandae non consequatur incidunt maxime! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas illo, nobis porro tempora veniam ex corporis officiis laboriosam dicta a nemo obcaecati, accusamus molestias reiciendis unde eum vel qui consectetur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id labore libero magnam cupiditate voluptatum! Fugiat praesentium dicta, eveniet maxime quis porro itaque quos nemo eum, nulla, laudantium sequi iste nihil.</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab debitis mollitia delectus rem, quas sequi ducimus doloremque eveniet, autem explicabo ex quis? Molestiae doloremque quisquam recusandae non consequatur incidunt maxime! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas illo, nobis porro tempora veniam ex corporis officiis laboriosam dicta a nemo obcaecati, accusamus molestias reiciendis unde eum vel qui consectetur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id labore libero magnam cupiditate voluptatum! Fugiat praesentium dicta, eveniet maxime quis porro itaque quos nemo eum, nulla, laudantium sequi iste nihil.</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab debitis mollitia delectus rem, quas sequi ducimus doloremque eveniet, autem explicabo ex quis? Molestiae doloremque quisquam recusandae non consequatur incidunt maxime! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas illo, nobis porro tempora veniam ex corporis officiis laboriosam dicta a nemo obcaecati, accusamus molestias reiciendis unde eum vel qui consectetur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id labore libero magnam cupiditate voluptatum! Fugiat praesentium dicta, eveniet maxime quis porro itaque quos nemo eum, nulla, laudantium sequi iste nihil.</p>
+    
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab debitis mollitia delectus rem, quas sequi ducimus doloremque eveniet, autem explicabo ex quis? Molestiae doloremque quisquam recusandae non consequatur incidunt maxime! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas illo, nobis porro tempora veniam ex corporis officiis laboriosam dicta a nemo obcaecati, accusamus molestias reiciendis unde eum vel qui consectetur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id labore libero magnam cupiditate voluptatum! Fugiat praesentium dicta, eveniet maxime quis porro itaque quos nemo eum, nulla, laudantium sequi iste nihil.</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab debitis mollitia delectus rem, quas sequi ducimus doloremque eveniet, autem explicabo ex quis? Molestiae doloremque quisquam recusandae non consequatur incidunt maxime! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas illo, nobis porro tempora veniam ex corporis officiis laboriosam dicta a nemo obcaecati, accusamus molestias reiciendis unde eum vel qui consectetur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id labore libero magnam cupiditate voluptatum! Fugiat praesentium dicta, eveniet maxime quis porro itaque quos nemo eum, nulla, laudantium sequi iste nihil.</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab debitis mollitia delectus rem, quas sequi ducimus doloremque eveniet, autem explicabo ex quis? Molestiae doloremque quisquam recusandae non consequatur incidunt maxime! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas illo, nobis porro tempora veniam ex corporis officiis laboriosam dicta a nemo obcaecati, accusamus molestias reiciendis unde eum vel qui consectetur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id labore libero magnam cupiditate voluptatum! Fugiat praesentium dicta, eveniet maxime quis porro itaque quos nemo eum, nulla, laudantium sequi iste nihil.</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab debitis mollitia delectus rem, quas sequi ducimus doloremque eveniet, autem explicabo ex quis? Molestiae doloremque quisquam recusandae non consequatur incidunt maxime! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas illo, nobis porro tempora veniam ex corporis officiis laboriosam dicta a nemo obcaecati, accusamus molestias reiciendis unde eum vel qui consectetur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id labore libero magnam cupiditate voluptatum! Fugiat praesentium dicta, eveniet maxime quis porro itaque quos nemo eum, nulla, laudantium sequi iste nihil.</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab debitis mollitia delectus rem, quas sequi ducimus doloremque eveniet, autem explicabo ex quis? Molestiae doloremque quisquam recusandae non consequatur incidunt maxime! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas illo, nobis porro tempora veniam ex corporis officiis laboriosam dicta a nemo obcaecati, accusamus molestias reiciendis unde eum vel qui consectetur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id labore libero magnam cupiditate voluptatum! Fugiat praesentium dicta, eveniet maxime quis porro itaque quos nemo eum, nulla, laudantium sequi iste nihil.</p>
+    
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab debitis mollitia delectus rem, quas sequi ducimus doloremque eveniet, autem explicabo ex quis? Molestiae doloremque quisquam recusandae non consequatur incidunt maxime! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas illo, nobis porro tempora veniam ex corporis officiis laboriosam dicta a nemo obcaecati, accusamus molestias reiciendis unde eum vel qui consectetur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id labore libero magnam cupiditate voluptatum! Fugiat praesentium dicta, eveniet maxime quis porro itaque quos nemo eum, nulla, laudantium sequi iste nihil.</p>
+</body>
+</html>
