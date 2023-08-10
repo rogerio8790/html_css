@@ -4,12 +4,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Media Query</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="estilos/style.css">
+	<link rel="stylesheet" href="estilos/media_query.css">
 </head>
-<body>
+<body onresize="tamanho()">
 	<header>
 		<h1>Meu Site</h1>
-		<menu>
+		<span id="burguer" class="material-icons" onclick="menu()">menu</span>
+		<menu id="itens">
 			<ul>
 				<li><a href="#">Opção 1</a></li>
 				<li><a href="#">Opção 2</a></li>
@@ -30,5 +33,22 @@
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime esse fugiat magnam ad eveniet nulla culpa ipsum molestiae? Earum corrupti dignissimos, dicta maiores nemo quod minima nostrum autem accusamus. Odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora architecto enim, laboriosam odit ducimus molestiae illum suscipit consequatur delectus ratione? Qui illum iste magni aliquam sequi error fuga, possimus deleniti.</p>
 		</article>
 	</main>
+	<script>
+		function tamanho() {
+			if (window.innerWidth >= 768) {
+				itens.style.display = 'block'
+			} else {
+				itens.style.display = 'none'
+			}
+		}
+
+		function menu() {
+			if (itens.style.display == 'block') {
+				itens.style.display = 'none'
+			} else {
+				itens.style.display = 'block'
+			}
+		}
+	</script>
 </body>
 </html>
